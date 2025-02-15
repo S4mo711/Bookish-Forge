@@ -537,7 +537,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (316:8) {#each list_items as { icon, label }}
+// (213:8) {#each list_items as { icon, label }}
 function create_each_block(ctx) {
 	let li;
 	let span;
@@ -565,8 +565,8 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "label svelte-zluadq");
-			attr(li, "class", "svelte-zluadq");
+			attr(span, "class", "label");
+			attr(li, "class", "svelte-1pukn4u");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -584,7 +584,7 @@ function create_each_block(ctx) {
 }
 
 function create_fragment(ctx) {
-	let section2;
+	let section1;
 	let div8;
 	let div0;
 	let h2;
@@ -598,7 +598,6 @@ function create_fragment(ctx) {
 	let input0;
 	let t5;
 	let form_1;
-	let section1;
 	let section0;
 	let div7;
 	let div1;
@@ -648,7 +647,7 @@ function create_fragment(ctx) {
 
 	return {
 		c() {
-			section2 = element("section");
+			section1 = element("section");
 			div8 = element("div");
 			div0 = element("div");
 			h2 = element("h2");
@@ -667,7 +666,6 @@ function create_fragment(ctx) {
 			input0 = element("input");
 			t5 = space();
 			form_1 = element("form");
-			section1 = element("section");
 			section0 = element("section");
 			div7 = element("div");
 			div1 = element("div");
@@ -711,9 +709,9 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			section2 = claim_element(nodes, "SECTION", { class: true });
-			var section2_nodes = children(section2);
-			div8 = claim_element(section2_nodes, "DIV", { class: true });
+			section1 = claim_element(nodes, "SECTION", { class: true });
+			var section1_nodes = children(section1);
+			div8 = claim_element(section1_nodes, "DIV", { class: true });
 			var div8_nodes = children(div8);
 			div0 = claim_element(div8_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
@@ -748,9 +746,7 @@ function create_fragment(ctx) {
 			});
 
 			var form_1_nodes = children(form_1);
-			section1 = claim_element(form_1_nodes, "SECTION", { class: true });
-			var section1_nodes = children(section1);
-			section0 = claim_element(section1_nodes, "SECTION", { class: true });
+			section0 = claim_element(form_1_nodes, "SECTION", { class: true });
 			var section0_nodes = children(section0);
 			div7 = claim_element(section0_nodes, "DIV", { class: true });
 			var div7_nodes = children(div7);
@@ -863,7 +859,6 @@ function create_fragment(ctx) {
 			div6_nodes.forEach(detach);
 			div7_nodes.forEach(detach);
 			section0_nodes.forEach(detach);
-			section1_nodes.forEach(detach);
 			t23 = claim_space(form_1_nodes);
 			button = claim_element(form_1_nodes, "BUTTON", { type: true, class: true });
 			var button_nodes = children(button);
@@ -871,80 +866,79 @@ function create_fragment(ctx) {
 			button_nodes.forEach(detach);
 			form_1_nodes.forEach(detach);
 			div8_nodes.forEach(detach);
-			section2_nodes.forEach(detach);
+			section1_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(h3, "class", "subheading svelte-zluadq");
-			attr(ul, "class", "svelte-zluadq");
-			attr(div0, "class", "main svelte-zluadq");
+			attr(h3, "class", "subheading svelte-1pukn4u");
+			attr(ul, "class", "svelte-1pukn4u");
+			attr(div0, "class", "main svelte-1pukn4u");
 			attr(input0, "type", "hidden");
 			attr(input0, "name", "_captcha");
 			input0.value = "false";
-			attr(input0, "class", "svelte-zluadq");
+			attr(input0, "class", "svelte-1pukn4u");
 			attr(label0, "for", "name");
-			attr(label0, "class", "form-label svelte-zluadq");
+			attr(label0, "class", "form-label svelte-1pukn4u");
 			attr(input1, "id", "name");
 			attr(input1, "name", "name");
-			attr(input1, "class", "form-input svelte-zluadq");
+			attr(input1, "class", "form-input svelte-1pukn4u");
 			attr(input1, "placeholder", "Full Name");
 			attr(input1, "type", "text");
-			attr(div1, "class", "form-group svelte-zluadq");
+			attr(div1, "class", "form-group svelte-1pukn4u");
 			attr(label1, "for", "email");
-			attr(label1, "class", "form-label svelte-zluadq");
+			attr(label1, "class", "form-label svelte-1pukn4u");
 			attr(input2, "id", "email");
 			attr(input2, "name", "email");
-			attr(input2, "class", "form-input svelte-zluadq");
+			attr(input2, "class", "form-input svelte-1pukn4u");
 			attr(input2, "placeholder", "Your email");
 			attr(input2, "type", "email");
-			attr(div2, "class", "form-group svelte-zluadq");
+			attr(div2, "class", "form-group svelte-1pukn4u");
 			attr(label2, "for", "message");
-			attr(label2, "class", "form-label svelte-zluadq");
-			attr(textarea, "class", "form-textarea svelte-zluadq");
+			attr(label2, "class", "form-label svelte-1pukn4u");
+			attr(textarea, "class", "form-textarea svelte-1pukn4u");
 			attr(textarea, "id", "message");
 			attr(textarea, "name", "message");
 			attr(textarea, "placeholder", "Your project details");
-			attr(div3, "class", "form-group svelte-zluadq");
+			attr(div3, "class", "form-group svelte-1pukn4u");
 			attr(label3, "for", "genre");
-			attr(label3, "class", "form-label svelte-zluadq");
+			attr(label3, "class", "form-label svelte-1pukn4u");
 			attr(input3, "id", "genre");
 			attr(input3, "name", "genre");
-			attr(input3, "class", "form-input svelte-zluadq");
+			attr(input3, "class", "form-input svelte-1pukn4u");
 			attr(input3, "placeholder", "Genre");
 			attr(input3, "type", "text");
-			attr(div4, "class", "form-group svelte-zluadq");
+			attr(div4, "class", "form-group svelte-1pukn4u");
 			attr(label4, "for", "when");
-			attr(label4, "class", "form-label svelte-zluadq");
+			attr(label4, "class", "form-label svelte-1pukn4u");
 			attr(input4, "id", "when");
 			attr(input4, "name", "when");
-			attr(input4, "class", "form-input svelte-zluadq");
+			attr(input4, "class", "form-input svelte-1pukn4u");
 			attr(input4, "placeholder", "");
 			attr(input4, "type", "text");
-			attr(div5, "class", "form-group svelte-zluadq");
+			attr(div5, "class", "form-group svelte-1pukn4u");
 			attr(label5, "for", "Budget");
-			attr(label5, "class", "form-label svelte-zluadq");
+			attr(label5, "class", "form-label svelte-1pukn4u");
 			attr(input5, "id", "Budget");
 			attr(input5, "name", "Budget");
-			attr(input5, "class", "form-input svelte-zluadq");
+			attr(input5, "class", "form-input svelte-1pukn4u");
 			attr(input5, "placeholder", "");
 			attr(input5, "type", "text");
-			attr(div6, "class", "form-group svelte-zluadq");
-			attr(div7, "class", "form-group-container svelte-zluadq");
-			attr(section0, "class", "contact-section svelte-zluadq");
-			attr(section1, "class", "cardd svelte-zluadq");
+			attr(div6, "class", "form-group svelte-1pukn4u");
+			attr(div7, "class", "form-group-container svelte-1pukn4u");
+			attr(section0, "class", "contact-section svelte-1pukn4u");
 			attr(button, "type", "submit");
-			attr(button, "class", "button svelte-zluadq");
+			attr(button, "class", "button svelte-1pukn4u");
 			attr(form_1, "target", "_blank");
 			attr(form_1, "action", "https://formsubmit.co/bookishforge@gmail.com");
 			attr(form_1, "method", "POST");
-			attr(form_1, "class", "svelte-zluadq");
-			attr(div8, "class", "section-container svelte-zluadq");
-			attr(section2, "class", "svelte-zluadq");
+			attr(form_1, "class", "svelte-1pukn4u");
+			attr(div8, "class", "section-container svelte-1pukn4u");
+			attr(section1, "class", "section svelte-1pukn4u");
 		},
 		m(target, anchor) {
-			insert_hydration(target, section2, anchor);
-			append_hydration(section2, div8);
+			insert_hydration(target, section1, anchor);
+			append_hydration(section1, div8);
 			append_hydration(div8, div0);
 			append_hydration(div0, h2);
 			append_hydration(h2, t0);
@@ -964,8 +958,7 @@ function create_fragment(ctx) {
 			append_hydration(div8, input0);
 			append_hydration(div8, t5);
 			append_hydration(div8, form_1);
-			append_hydration(form_1, section1);
-			append_hydration(section1, section0);
+			append_hydration(form_1, section0);
 			append_hydration(section0, div7);
 			append_hydration(div7, div1);
 			append_hydration(div1, label0);
@@ -1036,7 +1029,7 @@ function create_fragment(ctx) {
 		i: noop,
 		o: noop,
 		d(detaching) {
-			if (detaching) detach(section2);
+			if (detaching) detach(section1);
 			destroy_each(each_blocks, detaching);
 		}
 	};
