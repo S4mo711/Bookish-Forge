@@ -3159,7 +3159,7 @@ function create_if_block_1(ctx) {
 	let nav;
 	let t0;
 	let a;
-	let t1_value = /*primary_cta*/ ctx[5].label + "";
+	let t1_value = /*primary_cta*/ ctx[6].label + "";
 	let t1;
 	let a_href_value;
 	let t2;
@@ -3222,7 +3222,7 @@ function create_if_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "href", a_href_value = /*primary_cta*/ ctx[5].url);
+			attr(a, "href", a_href_value = /*primary_cta*/ ctx[6].url);
 			attr(a, "class", "button svelte-15v6gj9");
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
@@ -3276,9 +3276,9 @@ function create_if_block_1(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if ((!current || dirty & /*primary_cta*/ 32) && t1_value !== (t1_value = /*primary_cta*/ ctx[5].label + "")) set_data(t1, t1_value);
+			if ((!current || dirty & /*primary_cta*/ 64) && t1_value !== (t1_value = /*primary_cta*/ ctx[6].label + "")) set_data(t1, t1_value);
 
-			if (!current || dirty & /*primary_cta*/ 32 && a_href_value !== (a_href_value = /*primary_cta*/ ctx[5].url)) {
+			if (!current || dirty & /*primary_cta*/ 64 && a_href_value !== (a_href_value = /*primary_cta*/ ctx[6].url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -3476,7 +3476,7 @@ function create_fragment(ctx) {
 	let nav;
 	let t1;
 	let a1;
-	let t2_value = /*primary_cta*/ ctx[5].label + "";
+	let t2_value = /*primary_cta*/ ctx[6].label + "";
 	let t2;
 	let a1_href_value;
 	let t3;
@@ -3571,7 +3571,7 @@ function create_fragment(ctx) {
 			t10 = text(" a Cover That Sells");
 			t11 = space();
 			span = element("span");
-			t12 = text(/*subheading*/ ctx[4]);
+			t12 = text(/*subheading*/ ctx[5]);
 			t13 = space();
 			if (if_block3) if_block3.c();
 			this.h();
@@ -3644,7 +3644,7 @@ function create_fragment(ctx) {
 			t11 = claim_space(header0_nodes);
 			span = claim_element(header0_nodes, "SPAN", { class: true });
 			var span_nodes = children(span);
-			t12 = claim_text(span_nodes, /*subheading*/ ctx[4]);
+			t12 = claim_text(span_nodes, /*subheading*/ ctx[5]);
 			span_nodes.forEach(detach);
 			t13 = claim_space(header0_nodes);
 			if (if_block3) if_block3.l(header0_nodes);
@@ -3656,7 +3656,7 @@ function create_fragment(ctx) {
 		h() {
 			attr(a0, "href", "/");
 			attr(a0, "class", "logo svelte-15v6gj9");
-			attr(a1, "href", a1_href_value = /*primary_cta*/ ctx[5].url);
+			attr(a1, "href", a1_href_value = /*primary_cta*/ ctx[6].url);
 			attr(a1, "class", "button svelte-15v6gj9");
 			attr(nav, "class", "svelte-15v6gj9");
 			attr(div0, "class", "desktop-nav svelte-15v6gj9");
@@ -3671,9 +3671,9 @@ function create_fragment(ctx) {
 			attr(span, "class", "subheading svelte-15v6gj9");
 			attr(header0, "class", "section-container svelte-15v6gj9");
 			attr(header1, "class", "bg-img");
-			set_style(header1, "background-image", "url('" + /*background*/ ctx[6].url + "')");
+			set_style(header1, "background-image", "url('" + /*background*/ ctx[4].url + "')");
 			attr(header1, "role", "img");
-			attr(header1, "aria-label", header1_aria_label_value = /*background*/ ctx[6].alt);
+			attr(header1, "aria-label", header1_aria_label_value = /*background*/ ctx[4].alt);
 			attr(body, "class", "svelte-15v6gj9");
 		},
 		m(target, anchor) {
@@ -3761,9 +3761,9 @@ function create_fragment(ctx) {
 				each_blocks.length = each_value_2.length;
 			}
 
-			if ((!current || dirty & /*primary_cta*/ 32) && t2_value !== (t2_value = /*primary_cta*/ ctx[5].label + "")) set_data(t2, t2_value);
+			if ((!current || dirty & /*primary_cta*/ 64) && t2_value !== (t2_value = /*primary_cta*/ ctx[6].label + "")) set_data(t2, t2_value);
 
-			if (!current || dirty & /*primary_cta*/ 32 && a1_href_value !== (a1_href_value = /*primary_cta*/ ctx[5].url)) {
+			if (!current || dirty & /*primary_cta*/ 64 && a1_href_value !== (a1_href_value = /*primary_cta*/ ctx[6].url)) {
 				attr(a1, "href", a1_href_value);
 			}
 
@@ -3803,7 +3803,7 @@ function create_fragment(ctx) {
 			}
 
 			if (!current || dirty & /*heading*/ 4) set_data(t7, /*heading*/ ctx[2]);
-			if (!current || dirty & /*subheading*/ 16) set_data(t12, /*subheading*/ ctx[4]);
+			if (!current || dirty & /*subheading*/ 32) set_data(t12, /*subheading*/ ctx[5]);
 
 			if (/*buttons*/ ctx[1].length > 0) {
 				if (if_block3) {
@@ -3818,11 +3818,11 @@ function create_fragment(ctx) {
 				if_block3 = null;
 			}
 
-			if (!current || dirty & /*background*/ 64) {
-				set_style(header1, "background-image", "url('" + /*background*/ ctx[6].url + "')");
+			if (!current || dirty & /*background*/ 16) {
+				set_style(header1, "background-image", "url('" + /*background*/ ctx[4].url + "')");
 			}
 
-			if (!current || dirty & /*background*/ 64 && header1_aria_label_value !== (header1_aria_label_value = /*background*/ ctx[6].alt)) {
+			if (!current || dirty & /*background*/ 16 && header1_aria_label_value !== (header1_aria_label_value = /*background*/ ctx[4].alt)) {
 				attr(header1, "aria-label", header1_aria_label_value);
 			}
 		},
@@ -3865,9 +3865,9 @@ function instance($$self, $$props, $$invalidate) {
 	let { buttons } = $$props;
 	let { heading } = $$props;
 	let { site_nav } = $$props;
+	let { background } = $$props;
 	let { subheading } = $$props;
 	let { primary_cta } = $$props;
-	let { background } = $$props;
 	let mobileNavOpen = false;
 
 	const click_handler = () => $$invalidate(7, mobileNavOpen = true);
@@ -3879,9 +3879,9 @@ function instance($$self, $$props, $$invalidate) {
 		if ('buttons' in $$props) $$invalidate(1, buttons = $$props.buttons);
 		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
 		if ('site_nav' in $$props) $$invalidate(3, site_nav = $$props.site_nav);
-		if ('subheading' in $$props) $$invalidate(4, subheading = $$props.subheading);
-		if ('primary_cta' in $$props) $$invalidate(5, primary_cta = $$props.primary_cta);
-		if ('background' in $$props) $$invalidate(6, background = $$props.background);
+		if ('background' in $$props) $$invalidate(4, background = $$props.background);
+		if ('subheading' in $$props) $$invalidate(5, subheading = $$props.subheading);
+		if ('primary_cta' in $$props) $$invalidate(6, primary_cta = $$props.primary_cta);
 	};
 
 	return [
@@ -3889,9 +3889,9 @@ function instance($$self, $$props, $$invalidate) {
 		buttons,
 		heading,
 		site_nav,
+		background,
 		subheading,
 		primary_cta,
-		background,
 		mobileNavOpen,
 		props,
 		click_handler,
@@ -3909,9 +3909,9 @@ class Component extends SvelteComponent {
 			buttons: 1,
 			heading: 2,
 			site_nav: 3,
-			subheading: 4,
-			primary_cta: 5,
-			background: 6
+			background: 4,
+			subheading: 5,
+			primary_cta: 6
 		});
 	}
 }

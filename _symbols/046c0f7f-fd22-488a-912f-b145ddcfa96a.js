@@ -3709,19 +3709,18 @@ function create_each_block(ctx) {
 function create_fragment(ctx) {
 	let section;
 	let form_1;
-	let t0;
 	let input;
-	let t1;
+	let t0;
 	let div2;
 	let div0;
 	let h2;
+	let t1;
 	let t2;
-	let t3;
 	let h3;
+	let t3;
 	let t4;
-	let t5;
 	let ul;
-	let t6;
+	let t5;
 	let div1;
 	let current_block_type_index;
 	let if_block;
@@ -3755,24 +3754,23 @@ function create_fragment(ctx) {
 		c() {
 			section = element("section");
 			form_1 = element("form");
-			t0 = space();
 			input = element("input");
-			t1 = space();
+			t0 = space();
 			div2 = element("div");
 			div0 = element("div");
 			h2 = element("h2");
-			t2 = text(/*heading*/ ctx[1]);
-			t3 = space();
+			t1 = text(/*heading*/ ctx[1]);
+			t2 = space();
 			h3 = element("h3");
-			t4 = text(/*subheading*/ ctx[3]);
-			t5 = space();
+			t3 = text(/*subheading*/ ctx[3]);
+			t4 = space();
 			ul = element("ul");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].c();
 			}
 
-			t6 = space();
+			t5 = space();
 			div1 = element("div");
 			if (if_block) if_block.c();
 			this.h();
@@ -3781,24 +3779,23 @@ function create_fragment(ctx) {
 			section = claim_element(nodes, "SECTION", { class: true });
 			var section_nodes = children(section);
 			form_1 = claim_element(section_nodes, "FORM", { action: true, method: true });
-			children(form_1).forEach(detach);
-			t0 = claim_space(section_nodes);
-			input = claim_element(section_nodes, "INPUT", { type: true, name: true });
-			t1 = claim_space(section_nodes);
-			div2 = claim_element(section_nodes, "DIV", { class: true });
+			var form_1_nodes = children(form_1);
+			input = claim_element(form_1_nodes, "INPUT", { type: true, name: true });
+			t0 = claim_space(form_1_nodes);
+			div2 = claim_element(form_1_nodes, "DIV", { class: true });
 			var div2_nodes = children(div2);
 			div0 = claim_element(div2_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 			h2 = claim_element(div0_nodes, "H2", { class: true });
 			var h2_nodes = children(h2);
-			t2 = claim_text(h2_nodes, /*heading*/ ctx[1]);
+			t1 = claim_text(h2_nodes, /*heading*/ ctx[1]);
 			h2_nodes.forEach(detach);
-			t3 = claim_space(div0_nodes);
+			t2 = claim_space(div0_nodes);
 			h3 = claim_element(div0_nodes, "H3", { class: true });
 			var h3_nodes = children(h3);
-			t4 = claim_text(h3_nodes, /*subheading*/ ctx[3]);
+			t3 = claim_text(h3_nodes, /*subheading*/ ctx[3]);
 			h3_nodes.forEach(detach);
-			t5 = claim_space(div0_nodes);
+			t4 = claim_space(div0_nodes);
 			ul = claim_element(div0_nodes, "UL", { class: true });
 			var ul_nodes = children(ul);
 
@@ -3808,18 +3805,17 @@ function create_fragment(ctx) {
 
 			ul_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
-			t6 = claim_space(div2_nodes);
+			t5 = claim_space(div2_nodes);
 			div1 = claim_element(div2_nodes, "DIV", { class: true });
 			var div1_nodes = children(div1);
 			if (if_block) if_block.l(div1_nodes);
 			div1_nodes.forEach(detach);
 			div2_nodes.forEach(detach);
+			form_1_nodes.forEach(detach);
 			section_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(form_1, "action", "https://formsubmit.co/bookishforge@gmail.com");
-			attr(form_1, "method", "POST");
 			attr(input, "type", "hidden");
 			attr(input, "name", "_captcha");
 			input.value = "false";
@@ -3829,22 +3825,23 @@ function create_fragment(ctx) {
 			attr(div0, "class", "main svelte-w2ieqn");
 			attr(div1, "class", "card svelte-w2ieqn");
 			attr(div2, "class", "section-container svelte-w2ieqn");
+			attr(form_1, "action", "https://formsubmit.co/bookishforge@gmail.com");
+			attr(form_1, "method", "POST");
 			attr(section, "class", "svelte-w2ieqn");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);
 			append_hydration(section, form_1);
-			append_hydration(section, t0);
-			append_hydration(section, input);
-			append_hydration(section, t1);
-			append_hydration(section, div2);
+			append_hydration(form_1, input);
+			append_hydration(form_1, t0);
+			append_hydration(form_1, div2);
 			append_hydration(div2, div0);
 			append_hydration(div0, h2);
-			append_hydration(h2, t2);
-			append_hydration(div0, t3);
+			append_hydration(h2, t1);
+			append_hydration(div0, t2);
 			append_hydration(div0, h3);
-			append_hydration(h3, t4);
-			append_hydration(div0, t5);
+			append_hydration(h3, t3);
+			append_hydration(div0, t4);
 			append_hydration(div0, ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3853,7 +3850,7 @@ function create_fragment(ctx) {
 				}
 			}
 
-			append_hydration(div2, t6);
+			append_hydration(div2, t5);
 			append_hydration(div2, div1);
 
 			if (~current_block_type_index) {
@@ -3863,8 +3860,8 @@ function create_fragment(ctx) {
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if (!current || dirty & /*heading*/ 2) set_data(t2, /*heading*/ ctx[1]);
-			if (!current || dirty & /*subheading*/ 8) set_data(t4, /*subheading*/ ctx[3]);
+			if (!current || dirty & /*heading*/ 2) set_data(t1, /*heading*/ ctx[1]);
+			if (!current || dirty & /*subheading*/ 8) set_data(t3, /*subheading*/ ctx[3]);
 
 			if (dirty & /*list_items*/ 4) {
 				each_value_1 = /*list_items*/ ctx[2];
