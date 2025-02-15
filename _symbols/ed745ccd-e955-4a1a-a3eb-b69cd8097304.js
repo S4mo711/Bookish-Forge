@@ -3453,7 +3453,7 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a0, "href", "bookishforge.com");
+			attr(a0, "href", "/");
 			attr(a0, "class", "logo svelte-19cs074");
 			attr(a1, "href", a1_href_value = /*primary_cta*/ ctx[2].url);
 			attr(a1, "class", "button svelte-19cs074");
