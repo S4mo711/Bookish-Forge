@@ -1,4 +1,4 @@
-// Contact Form - Updated February 15, 2025
+// Contact Form - Updated February 16, 2025
 function noop() { }
 function run(fn) {
     return fn();
@@ -566,7 +566,7 @@ function create_each_block(ctx) {
 		},
 		h() {
 			attr(span, "class", "label");
-			attr(li, "class", "svelte-1pukn4u");
+			attr(li, "class", "svelte-1cugjfd");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -871,70 +871,70 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(h3, "class", "subheading svelte-1pukn4u");
-			attr(ul, "class", "svelte-1pukn4u");
-			attr(div0, "class", "main svelte-1pukn4u");
+			attr(h3, "class", "subheading svelte-1cugjfd");
+			attr(ul, "class", "svelte-1cugjfd");
+			attr(div0, "class", "main svelte-1cugjfd");
 			attr(input0, "type", "hidden");
 			attr(input0, "name", "_captcha");
 			input0.value = "false";
-			attr(input0, "class", "svelte-1pukn4u");
+			attr(input0, "class", "svelte-1cugjfd");
 			attr(label0, "for", "name");
-			attr(label0, "class", "form-label svelte-1pukn4u");
+			attr(label0, "class", "form-label svelte-1cugjfd");
 			attr(input1, "id", "name");
 			attr(input1, "name", "name");
-			attr(input1, "class", "form-input svelte-1pukn4u");
+			attr(input1, "class", "form-input svelte-1cugjfd");
 			attr(input1, "placeholder", "Full Name");
 			attr(input1, "type", "text");
-			attr(div1, "class", "form-group svelte-1pukn4u");
+			attr(div1, "class", "form-group svelte-1cugjfd");
 			attr(label1, "for", "email");
-			attr(label1, "class", "form-label svelte-1pukn4u");
+			attr(label1, "class", "form-label svelte-1cugjfd");
 			attr(input2, "id", "email");
 			attr(input2, "name", "email");
-			attr(input2, "class", "form-input svelte-1pukn4u");
+			attr(input2, "class", "form-input svelte-1cugjfd");
 			attr(input2, "placeholder", "Your email");
 			attr(input2, "type", "email");
-			attr(div2, "class", "form-group svelte-1pukn4u");
+			attr(div2, "class", "form-group svelte-1cugjfd");
 			attr(label2, "for", "message");
-			attr(label2, "class", "form-label svelte-1pukn4u");
-			attr(textarea, "class", "form-textarea svelte-1pukn4u");
+			attr(label2, "class", "form-label svelte-1cugjfd");
+			attr(textarea, "class", "form-textarea svelte-1cugjfd");
 			attr(textarea, "id", "message");
 			attr(textarea, "name", "message");
 			attr(textarea, "placeholder", "Your project details");
-			attr(div3, "class", "form-group svelte-1pukn4u");
+			attr(div3, "class", "form-group svelte-1cugjfd");
 			attr(label3, "for", "genre");
-			attr(label3, "class", "form-label svelte-1pukn4u");
+			attr(label3, "class", "form-label svelte-1cugjfd");
 			attr(input3, "id", "genre");
 			attr(input3, "name", "genre");
-			attr(input3, "class", "form-input svelte-1pukn4u");
+			attr(input3, "class", "form-input svelte-1cugjfd");
 			attr(input3, "placeholder", "Genre");
 			attr(input3, "type", "text");
-			attr(div4, "class", "form-group svelte-1pukn4u");
+			attr(div4, "class", "form-group svelte-1cugjfd");
 			attr(label4, "for", "when");
-			attr(label4, "class", "form-label svelte-1pukn4u");
+			attr(label4, "class", "form-label svelte-1cugjfd");
 			attr(input4, "id", "when");
 			attr(input4, "name", "when");
-			attr(input4, "class", "form-input svelte-1pukn4u");
+			attr(input4, "class", "form-input svelte-1cugjfd");
 			attr(input4, "placeholder", "");
 			attr(input4, "type", "text");
-			attr(div5, "class", "form-group svelte-1pukn4u");
+			attr(div5, "class", "form-group svelte-1cugjfd");
 			attr(label5, "for", "Budget");
-			attr(label5, "class", "form-label svelte-1pukn4u");
+			attr(label5, "class", "form-label svelte-1cugjfd");
 			attr(input5, "id", "Budget");
 			attr(input5, "name", "Budget");
-			attr(input5, "class", "form-input svelte-1pukn4u");
+			attr(input5, "class", "form-input svelte-1cugjfd");
 			attr(input5, "placeholder", "");
 			attr(input5, "type", "text");
-			attr(div6, "class", "form-group svelte-1pukn4u");
-			attr(div7, "class", "form-group-container svelte-1pukn4u");
-			attr(section0, "class", "contact-section svelte-1pukn4u");
+			attr(div6, "class", "form-group svelte-1cugjfd");
+			attr(div7, "class", "form-group-container svelte-1cugjfd");
+			attr(section0, "class", "contact-section svelte-1cugjfd");
 			attr(button, "type", "submit");
-			attr(button, "class", "button svelte-1pukn4u");
+			attr(button, "class", "button svelte-1cugjfd");
 			attr(form_1, "target", "_blank");
 			attr(form_1, "action", "https://formsubmit.co/bookishforge@gmail.com");
 			attr(form_1, "method", "POST");
-			attr(form_1, "class", "svelte-1pukn4u");
-			attr(div8, "class", "section-container svelte-1pukn4u");
-			attr(section1, "class", "section svelte-1pukn4u");
+			attr(form_1, "class", "svelte-1cugjfd");
+			attr(div8, "class", "section-container svelte-1cugjfd");
+			attr(section1, "class", "section svelte-1cugjfd");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section1, anchor);
